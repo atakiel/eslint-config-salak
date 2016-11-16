@@ -13,9 +13,9 @@ module.exports = {
   "env": {
   },
   "extends": [
-    "salak/es.js",
-    "salak/error.js",
-    "salak/general.js"
+    "salak/es",
+    "salak/error",
+    "salak/general"
   ],
   "plugins": [
   ],

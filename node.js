@@ -13,7 +13,7 @@ module.exports = {
     "node": true
   },
   "extends": [
-    "salak/es.js"
+    "salak/es"
   ],
   "plugins": [
   ],

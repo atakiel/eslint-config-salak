@@ -18,7 +18,7 @@ module.exports = {
     "es6": true
   },
   "extends": [
-    "salak/es.js"
+    "salak/es"
   ],
   "plugins": [
     "react"
