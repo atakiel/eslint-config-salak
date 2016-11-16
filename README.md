@@ -4,10 +4,12 @@ Opinionated style rules for ESLint.
 
 ## How to use
 
+Prerequisites: You are expected to have [ESLint](eslint.org) installed, and means to run it.
+
 Install `eslint-config-salak`.
 
 ```sh
-npm install --save-dev <path to eslint-config-salak>
+npm install --save-dev <path to eslint-config-salak> babel-eslint eslint-plugin-react
 ```
 
 Create `.eslintrc` file in your project root, and add the following code in it:
