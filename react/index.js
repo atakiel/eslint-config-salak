@@ -63,28 +63,6 @@ module.exports = {
     /**
      * Opinionated.
      *
-     * Closing tag in JSX should be always after the last prop (on the
-     * same line).
-     *
-     * E.g.
-     *
-     * ```javascript
-     * <Foo bar={true}
-     *      baz="baz" />
-     *
-     * <Bar bar={true}
-     *      baz="baz">
-     *      <Foobar />
-     * </Bar>
-     * ```
-     *
-     * @see eslint-plugin-react rule group: "JSX-specific rules"
-     */
-    "react/jsx-closing-bracket-location": [2, {"selfClosing": "after-props", "nonEmpty": "after-props"}],
-
-    /**
-     * Opinionated.
-     *
      * In JSX props the curly braces should never have space after starting
      * brace or before closing brace.
      *
@@ -120,24 +98,7 @@ module.exports = {
      *
      * @see eslint-plugin-react rule group: "JSX-specific rules"
      */
-    "react/jsx-handler-names": [0],
-
-    /**
-     * Opinionated.
-     *
-     * This rule is disabled, as it currently doesn't support the wanted style.
-     *
-     * The first prop should be right after the component name, and the rest
-     * of the props should be indented at the same level as the first one.
-     *
-     * ```javascript
-     * <Foo bar="1"
-     *      baz="2" />
-     * ```
-     *
-     * @see eslint-plugin-react rule group: "JSX-specific rules"
-     */
-    "react/jsx-indent-props": [0],
+    "react/jsx-handler-names": [2],
 
     /**
      * Opinionated.
@@ -157,15 +118,6 @@ module.exports = {
      * @see eslint-plugin-react rule group: "JSX-specific rules"
      */
     "react/jsx-key": [2],
-
-    /**
-     * Opinionated.
-     *
-     * Only one prop should be on a same line.
-     *
-     * @see eslint-plugin-react rule group: "JSX-specific rules"
-     */
-    "react/jsx-max-props-per-line": [2],
 
     /**
      * Opinionated.
@@ -215,6 +167,10 @@ module.exports = {
      *
      * Warns if component name is not written in PascalCase.
      *
+     * ```javascript
+     * <FooBar />
+     * ```
+     *
      * @see eslint-plugin-react rule group: "JSX-specific rules"
      */
     "react/jsx-pascal-case": [2],
@@ -241,6 +197,25 @@ module.exports = {
      * @see eslint-plugin-react rule group: "JSX-specific rules"
      */
     "react/jsx-space-before-closing": [2, "always"],
+
+    /**
+     * Opinionated.
+     *
+     * Self-closing elements in JSX should have a single space before the
+     * closing bracket.
+     *
+     * ```javascript
+     * <Foo bar="1" />
+     * ```
+     *
+     * @see eslint-plugin-react rule group: "JSX-specific rules"
+     */
+    "react/jsx-tag-spacing": [2, {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never"
+      }
+    ],
 
     /**
      * Opinionated.
