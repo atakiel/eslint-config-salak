@@ -1,1 +1,1 @@
-module.exports = require("./react/index");
+module.exports = require("./react/react-core");
