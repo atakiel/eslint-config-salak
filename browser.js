@@ -1,30 +1,34 @@
+/**
+ * This module exports ESLint rule configuration for rules that are browser
+ * specific.
+ *
+ * @type {Object}
+ */
 module.exports = {
 
   "ecmaFeatures": {
   },
   "env": {
-    "browser": true,
+    "browser": true
   },
   "extends": [
-    "eslint:recommended",
-    "safari/es6"
+    "salak/es6.js"
   ],
   "plugins": [
   ],
   "rules": {
-    /**
-     * As we are in node environment, console is okay to use.
-     * It's the general means for showing user information.
+    /*
+     * Opinionated.
+     *
+     * As we are in browser environment, `console` shouldn't be used.
+     * It's main use case in browser is many times debugging,
+     * and there exist better means of debugging in browser environment.
+     *
+     * As not all browsers implement `console`, calling console might also
+     * result in `Error`.
      */
-    "no-console": 0,
+    "no-console": 2
 
-    "eqeqeq": [2, "smart"],
-    "no-const-assign": 2,
-    "no-delete-var": 2,
-    "no-dupe-class-members": 2,
-    "no-unexpected-multiline": 2,
-    "no-unused-vars": [1, {"vars": "all", "args": "none"}],
-    "valid-jsdoc": 2,
   }
 
 };
