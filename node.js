@@ -5,7 +5,9 @@
  * @type {Object}
  */
 module.exports = {
-  "ecmaFeatures": {
+  "parserOptions": {
+    "ecmaFeatures": {
+    }
   },
   "env": {
     "node": true

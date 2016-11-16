@@ -1,6 +1,8 @@
 module.exports = {
-  "ecmaFeatures": {
-    "modules": true
+  "parserOptions": {
+    "ecmaFeatures": {
+      "modules": true
+    },
   },
   "env": {
     "node": true,

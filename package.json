@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-salak",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An opinionated take on eslint rules for different environments.",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,10 @@
   },
   "devDependencies": {
     "eslint-plugin-react": "^3.16.1",
-    "eslint": "^2.4.0"
+    "eslint": ">= 3"
+  },
+  "peerDependencies": {
+    "eslint-plugin-react": "^3.16.1",
+    "eslint": ">= 3"
   }
 }

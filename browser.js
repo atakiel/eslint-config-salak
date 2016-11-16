@@ -5,8 +5,9 @@
  * @type {Object}
  */
 module.exports = {
-
-  "ecmaFeatures": {
+  "parserOptions": {
+    "ecmaFeatures": {
+    }
   },
   "env": {
     "browser": true
@@ -17,6 +18,7 @@ module.exports = {
   "plugins": [
   ],
   "rules": {
+
     /*
      * Opinionated.
      *
