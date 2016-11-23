@@ -6,19 +6,21 @@ Opinionated style rules for ESLint.
 
 Prerequisites: You are expected to have [ESLint](eslint.org) installed, and means to run it.
 
-Install `eslint-config-salak`.
+Steps to use:
 
-```sh
-npm install --save-dev <path to eslint-config-salak> babel-eslint eslint-plugin-react
-```
+1. Install `eslint-config-salak`
 
-Create `.eslintrc` file in your project root, and add the following code in it:
+    ```sh
+    npm install --save-dev <path to eslint-config-salak> babel-eslint eslint-plugin-react
+    ```
 
-```json
-{
-  "extends": "salak"
-}
-```
+2. Create `.eslintrc` file in your project root, and add the following code in it:
+
+    ```json
+    {
+      "extends": "salak"
+    }
+    ```
 
 There's additional configs in salak that you can use:
 

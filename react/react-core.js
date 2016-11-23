@@ -50,15 +50,18 @@ module.exports = {
     /**
      * Opinionated.
      *
-     * Always use boolean values for props in JSX.
+     * Never use boolean values for props. Variables with boolean values are ok.
      *
      * ```javascript
-     * <Foo bar={true} />
+     * <Foo bar />
+     *
+     * const baz = true;
+     * <Foo bar={baz} />
      * ```
      *
      * @see eslint-plugin-react rule group: "JSX-specific rules"
      */
-    "react/jsx-boolean-value": [2, "always"],
+    "react/jsx-boolean-value": [2, "never"],
 
     /**
      * Opinionated.
