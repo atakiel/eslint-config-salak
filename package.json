@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-salak",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An opinionated take on eslint rules for different environments.",
   "main": "index.js",
   "scripts": {
