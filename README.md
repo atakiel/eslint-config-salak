@@ -4,14 +4,14 @@ Opinionated style rules for ESLint.
 
 ## How to use
 
-Prerequisites: You are expected to have [ESLint](eslint.org) installed, and means to run it.
+Prerequisites: You are expected to have [ESLint](http://eslint.org) installed, and means to run it.
 
 Steps to use:
 
 1. Install `eslint-config-salak`
 
     ```sh
-    npm install --save-dev <path to eslint-config-salak> babel-eslint eslint-plugin-react
+    npm install --save-dev eslint-config-salak babel-eslint eslint-plugin-react
     ```
 
 2. Create `.eslintrc` file in your project root, and add the following code in it:
@@ -22,7 +22,7 @@ Steps to use:
     }
     ```
 
-There's additional configs in salak that you can use:
+There are additional configs in salak that you can use:
 
 * `es` - es6 and es7 specific rules
 * `general` - general rules
